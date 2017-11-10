@@ -23,7 +23,7 @@ function onReady() {
     $('#gamebox').append('<p id="clue"><p>');
     $('#gamebox').on('click', '#submit', submitGuess);
     $('#gamebox').on('click', '#newGameButton', newGame);
-    $('#gamebox').on('keypress', submitGuess); //this doesn't work 100% as intended, but the game still works on enter or submit
+    //$('#gamebox').on('keypress', submitGuess); //this is causing some weird behaviour and likely needs a keybinding to work as expected
 }
 
 var randomNumber = null
